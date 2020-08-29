@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modul 8</title>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
-    <!-- Шапка сайта -->
+
+    <!-- Header -->
+
     <header class="header">
       <div class="container">
         <div class="menu-container">
-          <a class="logo link animate__pulse" href="./index.html" lang="en"
+          <a href="./index.html" lang="en"
             ><span class="logo-web">Web</span>
             <span class="black-studio">Studio</span>
           </a>
@@ -56,10 +54,10 @@
               </li>
             </ul>
           </nav>
-          <address class="address contakt">
-            <ul class="contakt-list list">
+          <address class="address contact">
+            <ul class="contact-list list">
               <li class="item">
-                <a class="contakt-link link" href="mailto:info@devstudio.com"
+                <a class="contact-link link" href="mailto:info@devstudio.com"
                   ><svg class="icon-mail" width="16" height="11">
                     <use href="./images/sprite.svg#icon-mail"></use>
                   </svg>
@@ -67,7 +65,7 @@
                 </a>
               </li>
               <li class="item">
-                <a class="contakt-link link" href="tel:+380961111111">
+                <a class="contact-link link" href="tel:+380961111111">
                   <svg class="icon-phone" width="10" height="15">
                     <use href="./images/sprite.svg#icon-phone"></use>
                   </svg>
@@ -79,11 +77,12 @@
         </div>
       </div>
     </header>
-    <!-- Оснавная часть -->
+
+    <!-- Main portfolio -->
+
     <main>
       <section class="main-portfolio">
         <div class="container">
-          <!-- Заголовок h1 скрываем с помощью класса  .visualy-hidden -->
           <h1 class="visually-hidden">Портфолио</h1>
           <div class="filter">
             <ul class="list">
@@ -119,7 +118,6 @@
               <li class="portfolio-item">
                 <a class="portfolio-link link" href="">
                   <div class="portfolio-thumb">
-                    <!-- Одно фото сделано через дискртптор w -->
                     <img
                       src="./images/portfolio/project-1-mob.jpg"
                       alt="пользователь просматривает веб-страницу на ноутбуке"
@@ -129,29 +127,6 @@
                       "
                       sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50px, 100vw"
                     />
-                    <!-- <picture>
-                      <source
-                        media="(max-width: 767px)"
-                        srcset="
-                          ./images/portfolio/project-1-mob.jpg    1x,
-                          ./images/portfolio/project-1-mob@2x.jpg 2x
-                        "
-                        type="image/jpeg" />
-                      <source
-                        media="(min-width: 768px) and (max-width: 1199px) "
-                        srcset="
-                          ./images/portfolio/project-1-tab.jpg    1x,
-                          ./images/portfolio/project-1-tab@2x.jpg 2x
-                        "
-                        type="image/jpeg" />
-                      <img
-                        srcset="
-                          ./images/portfolio/project-1-desc.jpg    1x,
-                          ./images/portfolio/project-1-desc@2x.jpg 2x
-                        "
-                        src="./images/portfolio/project-1-mob.jpg"
-                        alt="пользователь просматривает веб-страницу на ноутбуке"
-                    /></picture> -->
                     <p class="portfolio-about">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -498,7 +473,7 @@
         </div>
       </section>
     </main>
-    <!-- Подвал сайта -->
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="container-tablet">
@@ -580,9 +555,7 @@
         </div>
       </div>
     </footer>
-    <!-- Скрипт для подключения меню-бургер -->
     <script src="./js/menu.js"></script>
-    <!-- Скрипт для подключения модального окна -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
