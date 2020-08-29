@@ -99,7 +99,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -257,12 +257,6 @@ summary {
   display: list-item;
 }
 
-.footer-social-item > a, .footer-form-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -318,39 +312,6 @@ textarea {
   resize: none;
 }
 
-/* Логотип */
-.logo {
-  display: inline-block;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.167;
-}
-
-.logo-web {
-  color: #2196f3;
-}
-
-.logo .black-studio {
-  color: #212121;
-}
-
-.logo .white-studio {
-  color: #ffffff;
-}
-
-.logo.animate__pulse {
-  animation-duration: 1000ms;
-}
-
-@media screen and (min-width: 1200px) {
-  .logo {
-    font-size: 26px;
-    line-height: 1.19;
-  }
-}
-
-/* "Эффект присутствия на странице */
 .nav-link.current {
   position: relative;
   display: inline-block;
@@ -374,7 +335,6 @@ textarea {
   }
 }
 
-/* Скрываем визуально текст и чекбокс*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -388,7 +348,6 @@ textarea {
   overflow: hidden;
 }
 
-/*                                   Наш div.container */
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -414,7 +373,6 @@ textarea {
   }
 }
 
-/*                                        Шапка сайта  */
 .header {
   position: relative;
   border-bottom: 1px solid #ececec;
@@ -434,6 +392,26 @@ textarea {
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.logo {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.167;
+}
+
+.logo-web {
+  color: #2196f3;
+}
+
+.logo .black-studio {
+  color: #212121;
+}
+
+.logo .white-studio {
+  color: #ffffff;
 }
 
 .button-menu {
@@ -497,7 +475,6 @@ textarea {
   }
 }
 
-/* Навигация */
 .nav-link {
   display: block;
   font-weight: 500;
@@ -537,7 +514,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .nav {
     margin-right: 305px;
   }
@@ -550,13 +527,13 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
-  .contakt-list {
+  .contact-list {
     display: flex;
     align-items: center;
   }
 }
 
-.contakt-link {
+.contact-link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.167;
@@ -565,18 +542,18 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contakt-link:hover, .contakt-link:focus {
+.contact-link:hover, .contact-link:focus {
   color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
-  .contakt-link {
+  .contact-link {
     font-size: 12px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .contakt-link {
+  .contact-link {
     font-size: 14px;
     line-height: 1.14;
   }
@@ -595,25 +572,25 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
-  .contakt-list .item:not(:last-child) {
+  .contact-list .item:not(:last-child) {
     margin-bottom: 16px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contakt-list .item:not(:last-child) {
+  .contact-list .item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .contakt-list .item:not(:last-child) {
+  .contact-list .item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .contakt-list .link {
+  .contact-list .link {
     display: flex;
   }
 }
@@ -626,8 +603,8 @@ textarea {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contakt-link:hover .icon-mail,
-.contakt-link:focus .icon-mail {
+.contact-link:hover .icon-mail,
+.contact-link:focus .icon-mail {
   fill: #2196f3;
 }
 
@@ -638,12 +615,11 @@ textarea {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contakt-link:hover .icon-phone,
-.contakt-link:focus .icon-phone {
+.contact-link:hover .icon-phone,
+.contact-link:focus .icon-phone {
   fill: #2196f3;
 }
 
-/*                                Секция Портфолио */
 @media screen and (max-width: 1199px) {
   .main-portfolio {
     padding-top: 60px;
@@ -662,7 +638,7 @@ textarea {
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .filter {
     margin-bottom: 30px;
   }
@@ -742,7 +718,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .portfolio-item {
     width: 450px;
   }
@@ -766,7 +742,7 @@ textarea {
   height: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .portfolio-item img {
     height: 294px;
   }
@@ -832,7 +808,7 @@ textarea {
   transform: translateY(0);
 }
 
-@media screen and (min-width: 440px) {
+@media screen and (min-width: 728px) {
   .portfolio-thumb .portfolio-about {
     padding-top: 77px;
     padding-bottom: 77px;
@@ -874,7 +850,7 @@ textarea {
   color: #212121;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .portfolio-card .portfolio-name {
     white-space: nowrap;
     overflow: hidden;
@@ -902,7 +878,6 @@ textarea {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-/*                                          Подвал сайта */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1007,6 +982,9 @@ textarea {
 }
 
 .footer-social-item > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -1084,6 +1062,9 @@ textarea {
 }
 
 .footer-form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   border-width: 0;
   padding-top: 10px;
