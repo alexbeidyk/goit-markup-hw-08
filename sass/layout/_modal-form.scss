@@ -234,7 +234,7 @@
   .form-modal-textarea:not(:placeholder-shown) + & {
     font-size: 12px;
     line-height: 1.17;
-    color: $hover-color;
+    color: $accent-color;
 
     transform: translate(-2px, -30px);
   }

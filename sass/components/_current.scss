@@ -1,9 +1,8 @@
-/* "Эффект присутствия на странице */
 
 .nav-link.current {
   position: relative;
   display: inline-block;
-  color: $hover-color;
+  color: $accent-color;
   &::after {
     position: absolute;
     left: 0;
@@ -13,9 +12,9 @@
     content: '';
     height: 4px;
     border-radius: 2px;
-    background-color: $hover-color;
+    background-color: $accent-color;
   }
-  @media screen and (max-width: $tablet - 1px) {
+  @media screen and (max-width: 768px - 1px) {
     padding-bottom: 8px;
   }
 }

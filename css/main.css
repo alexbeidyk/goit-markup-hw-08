@@ -414,6 +414,13 @@ textarea {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
 .button-menu {
   display: inline-flex;
   margin-top: 10px;
@@ -514,7 +521,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .nav {
     margin-right: 305px;
   }
